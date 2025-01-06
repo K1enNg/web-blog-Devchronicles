@@ -1,6 +1,7 @@
-import { Route, Routes } from "react-router-dom"
+import { Link, Route, Routes } from "react-router-dom"
 import Homepage from "./pages/Homepage"
 import Navbar from "./components/Navbar"
+import Posts from "./pages/Posts"
 
 function App() {
 
@@ -8,7 +9,8 @@ function App() {
     <>
       <Navbar/>
       <Routes>
-        <Route index element={<Homepage/>} />
+        <Route index element={<Homepage/>}/>
+        <Route element={<Posts/>} />
       </Routes>
     </>
   )
