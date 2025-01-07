@@ -1,8 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import Logo from '../assets/elite_logo.png'
-import Posts from '../pages/Posts'
-
 
 const Navbar = () => {
   return (
@@ -18,7 +16,7 @@ const Navbar = () => {
         <nav>
             <ul className='flex space-x-6'>
                 <li>
-                    <Link className='text-white' to='/pages/Posts'>
+                    <Link className='text-white' to={"/posts"}>
                         Posts
                     </Link>
                 </li>
